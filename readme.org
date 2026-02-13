@@ -9,19 +9,21 @@ This package provides [[https://github.com/minad/consult][consult]] integration 
 
 * Installation
 
-Clone this repository and add it to your load path:
-
-#+begin_src elisp
-(add-to-list 'load-path "/path/to/consult-gumshoe")
-(require 'consult-gumshoe)
-#+end_src
-
-Or with =use-package= and =straight.el=:
+** straight.el
 
 #+begin_src elisp
 (use-package consult-gumshoe
   :straight (consult-gumshoe :type git :host github :repo "Overdr0ne/consult-gumshoe")
   :after (gumshoe consult))
+#+end_src
+
+** Manual
+
+Clone this repository and add it to your load path:
+
+#+begin_src elisp
+(add-to-list 'load-path "/path/to/consult-gumshoe")
+(require 'consult-gumshoe)
 #+end_src
 
 * Dependencies
