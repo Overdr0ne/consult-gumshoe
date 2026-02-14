@@ -39,8 +39,7 @@
 ;;; Code:
 
 (require 'consult)
-(require 'context)
-(require 'gumshoe-lib)
+(require 'gumshoe)
 
 (defun consult-gumshoe--preview-state ()
   "Create a preview state function for gumshoe entries.
