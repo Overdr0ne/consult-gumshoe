@@ -71,7 +71,7 @@ Returns a closure that handles preview actions by jumping to context entries."
 (defun consult-gumshoe--peruse (objs slot-spec &optional obj-filter)
   "Peruse SLOT-SPEC fields of OBJS with live preview.
 
-Pre-filter results with OBJ-FILTER. As you scroll through candidates,
+Pre-filter results with OBJ-FILTER.  As you scroll through candidates,
 gumshoe will jump to each entry to preview it."
   (let* ((format-schema (string-join (mapcar #'symbol-name slot-spec)
                                      (propertize gumshoe-peruse-separator
