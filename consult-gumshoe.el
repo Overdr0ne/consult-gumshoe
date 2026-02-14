@@ -4,7 +4,7 @@
 
 ;; Author: overdr0ne
 ;; Version: 1.0
-;; Package-Requires: ((emacs "25.1") (consult "0.35") (gumshoe "3.1"))
+;; Package-Requires: ((emacs "27.1") (consult "0.35") (gumshoe "4.0"))
 ;; Keywords: tools
 ;; URL: https://github.com/Overdr0ne/consult-gumshoe
 
