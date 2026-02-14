@@ -44,8 +44,7 @@
 (defun consult-gumshoe--preview-state ()
   "Create a preview state function for gumshoe entries.
 Returns a closure that handles preview actions by jumping to context entries."
-  (let ((current-entry nil)
-        (original-window (selected-window))
+  (let ((original-window (selected-window))
         (original-buffer (current-buffer))
         (original-point (point)))
     (lambda (action cand)
@@ -53,7 +52,6 @@ Returns a closure that handles preview actions by jumping to context entries."
         ('preview
          ;; cand is the context object thanks to consult--lookup-candidate
          (when cand
-           (setq current-entry cand)
            (condition-case nil
                (context--jump cand)
              (error nil))))
